@@ -11,20 +11,33 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
-password = "" #variable vacia que obtendra valores en string "" no en integer.
+#password = "" #variable vacia que obtendra valores en string "" no en integer.
 
-for char in range(1, nr_letters + 1):
-  password += random.choice (letters)
+#for char in range(1, nr_letters + 1):
+#  password += random.choice (letters)
 
-for char in range(1, nr_symbols + 1):
-  password += random.choice (symbols)
+#for char in range(1, nr_symbols + 1):
+#  password += random.choice (symbols)
 
-for char in range(1, nr_numbers + 1):
-  password += random.choice (numbers)
+#for char in range(1, nr_numbers + 1):
+#  password += random.choice (numbers)
  
-
+#print(password)
 
 
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+
+password_list = [] #variable vacia que obtendra valores en lista [] no en string.
+
+for char in range(1, nr_letters + 1):
+  password_list += random.choice (letters)
+
+for char in range(1, nr_symbols + 1):
+  password_list += random.choice (symbols)
+
+for char in range(1, nr_numbers + 1):
+  password_list += random.choice (numbers)
+ 
+print(password_list)
